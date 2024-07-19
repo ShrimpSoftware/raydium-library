@@ -210,7 +210,7 @@ pub async  fn list_market(
 
     instructions.push(init_market_instruction);
 
-    let recent_hash = client.get_latest_blockhash()?;
+    let recent_hash = client.get_latest_blockhash().await?;
     let signers = vec![
         payer,
         &market_key,

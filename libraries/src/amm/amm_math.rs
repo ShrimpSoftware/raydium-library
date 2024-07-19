@@ -168,10 +168,10 @@ pub async fn calculate_pool_vault_amounts(
                 None,
             )?;
             let mut message = Message::new(&[simulate_pool_info_instruction], Some(&fee_payer));
-            message.recent_blockhash = client.get_latest_blockhash()?;
+            message.recent_blockhash = client.get_latest_blockhash().await?;
             let txn = Transaction::new_unsigned(message);
             let result =
-                rpc::simulate_transaction(&client, &txn, false, CommitmentConfig::confirmed())?;
+                rpc::simulate_transaction(&client, &txn, false, CommitmentConfig::confirmed()).await?;
             // println!("{:#?}", result);
             let mut ret = raydium_amm::state::GetPoolData::default();
             if result.value.err.is_none() {
