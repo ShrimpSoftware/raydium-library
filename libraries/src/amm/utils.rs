@@ -2,7 +2,7 @@ use crate::common;
 use anyhow::Result;
 
 use common::rpc;
-use solana_client::rpc_client::RpcClient;
+use solana_client::nonblocking::rpc_client::RpcClient;
 use solana_sdk::pubkey::Pubkey;
 
 #[derive(Clone, Copy, Debug)]
