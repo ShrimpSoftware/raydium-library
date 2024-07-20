@@ -23,11 +23,11 @@ spl-associated-token-account = { version = "2.2.0", features = [
 mpl-token-metadata = { version = "^4" }
 spl-token-2022 = { version = "0.9.0", features = ["no-entrypoint"] }
 spl-memo = "4.0.0"
-solana-program = "^1.18"
-solana-client = "^1.18"
-solana-sdk = "^1.18"
-solana-account-decoder = "^1.18"
-solana-transaction-status = "^1.18"
+solana-program = { git = "https://github.com/jito-foundation/jito-solana.git", tag = "v1.18.18-jito" }
+solana-client = { git = "https://github.com/jito-foundation/jito-solana.git", tag = "v1.18.18-jito" }
+solana-sdk = { git = "https://github.com/jito-foundation/jito-solana.git", tag = "v1.18.18-jito" }
+solana-account-decoder = { git = "https://github.com/jito-foundation/jito-solana.git", tag = "v1.18.18-jito" }
+solana-transaction-status = { git = "https://github.com/jito-foundation/jito-solana.git", tag = "v1.18.18-jito" }
 anyhow = "1.0.53"
 rand = "0.7.3"
 bytemuck = { version = "1.7.3" }
@@ -43,3 +43,10 @@ uint = "0.9.5"
 
 [lib]
 crate-type = ["cdylib", "lib"]
+
+[patch.crates-io]
+solana-program = { git = "https://github.com/jito-foundation/jito-solana.git", tag = "v1.18.18-jito" }
+solana-client = { git = "https://github.com/jito-foundation/jito-solana.git", tag = "v1.18.18-jito" }
+solana-sdk = { git = "https://github.com/jito-foundation/jito-solana.git", tag = "v1.18.18-jito" }
+solana-account-decoder = { git = "https://github.com/jito-foundation/jito-solana.git", tag = "v1.18.18-jito" }
+solana-transaction-status = { git = "https://github.com/jito-foundation/jito-solana.git", tag = "v1.18.18-jito" }
