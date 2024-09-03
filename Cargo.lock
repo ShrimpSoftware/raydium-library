@@ -3708,7 +3708,7 @@ dependencies = [
 [[package]]
 name = "raydium-amm-v3"
 version = "0.1.0"
-source = "git+https://github.com/ShrimpSoftware/raydium-clmm#3eb87c47b54785bc76f51255335aea76414e97c9"
+source = "git+https://github.com/ShrimpSoftware/raydium-clmm#2ed21a2882d7c471e78f581e5846b96ddee30a23"
 dependencies = [
  "anchor-lang",
  "anchor-spl",
@@ -3757,7 +3757,7 @@ dependencies = [
 [[package]]
 name = "raydium_amm"
 version = "0.3.0"
-source = "git+https://github.com/ShrimpSoftware/raydium-amm#6fe2f7d51cc106d7db2e4323857d1692b8978659"
+source = "git+https://github.com/ShrimpSoftware/raydium-amm#12755b72acb412a41cd1ee94346cf792ce03d6ea"
 dependencies = [
  "arrayref",
  "arrform",
